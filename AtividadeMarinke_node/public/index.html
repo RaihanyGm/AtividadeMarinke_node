@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhas tarefas</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="layout">
+    <header>
+      <span class="eyebrow">ORGANIZAÇÃO PESSOAL</span>
+      <h1>Minhas tarefas</h1>
+      <p>Crie, acompanhe e organize o que precisa ser feito.</p>
+    </header>
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">Nova tarefa</h2>
+      <form id="form">
+        <label for="titulo">Título</label>
+        <input id="titulo" name="titulo" maxlength="50" required placeholder="Ex.: Revisar relatório">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" required rows="3" placeholder="Descreva a tarefa"></textarea>
+        <div class="actions">
+          <button type="submit" id="submit">Adicionar tarefa</button>
+          <button type="button" id="cancel" class="secondary" hidden>Cancelar edição</button>
+        </div>
+      </form>
+    </section>
+    <section class="card" aria-labelledby="list-title">
+      <div class="heading"><h2 id="list-title">Lista de tarefas</h2><span id="count"></span></div>
+      <p id="message" role="status" aria-live="polite"></p>
+      <ul id="tasks"></ul>
+      <div class="pagination">
+        <button id="previous" class="secondary" type="button">Anterior</button>
+        <span id="page"></span>
+        <button id="next" class="secondary" type="button">Próxima</button>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

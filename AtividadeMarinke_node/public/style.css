@@ -1,0 +1,32 @@
+:root { font-family: system-ui, sans-serif; color: #162838; background: #f3f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.layout { max-width: 760px; margin: 0 auto; padding: 52px 20px; }
+header { margin-bottom: 32px; }
+.eyebrow { color: #087a74; font-size: .76rem; font-weight: 800; letter-spacing: .14em; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); margin: 8px 0; letter-spacing: -.04em; }
+header p { color: #586874; margin: 0; }
+.card { background: white; padding: 28px; border: 1px solid #e5edf0; border-radius: 18px; box-shadow: 0 8px 28px #213e5310; margin: 18px 0; }
+h2 { margin: 0 0 20px; font-size: 1.2rem; }
+label { display: block; font-weight: 650; margin: 14px 0 8px; }
+input, textarea { width: 100%; border: 1px solid #c5d1d7; border-radius: 9px; padding: 12px; font: inherit; color: inherit; }
+input:focus, textarea:focus, button:focus-visible { outline: 3px solid #7dd8d1; outline-offset: 2px; }
+button { border: 0; border-radius: 8px; padding: 10px 15px; background: #087a74; color: white; cursor: pointer; font: inherit; font-weight: 650; }
+button:hover { filter: brightness(.91); }
+button:disabled { opacity: .42; cursor: default; }
+.secondary { background: #e6f1f0; color: #17615c; }
+.danger { background: #fce9e8; color: #9e3029; }
+.actions, .pagination, .heading, .task-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.actions { margin-top: 18px; }
+.heading { justify-content: space-between; }
+.heading h2 { margin-bottom: 0; }
+#count { color: #677782; }
+#message { min-height: 1.5em; color: #ad3f31; }
+#message.ok { color: #087a74; }
+ul { list-style: none; margin: 0; padding: 0; }
+li { border-top: 1px solid #e9eef0; padding: 18px 0; display: flex; align-items: start; justify-content: space-between; gap: 15px; }
+li strong { display: block; overflow-wrap: anywhere; }
+li p { margin: 6px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; color: #586874; }
+.task-actions { flex-shrink: 0; }
+.pagination { justify-content: center; margin-top: 18px; }
+@media (max-width: 550px) { .card { padding: 20px; } li { flex-direction: column; } }
